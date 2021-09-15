@@ -1,0 +1,81 @@
+.navbarItems {
+  height: 2.7rem;
+  background-color: white;
+  padding-top: 1rem;
+  padding-left: 12.8rem;
+  padding-right: 12.8rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  border-bottom: solid 0.1rem #80808029;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: -webkit-fill-available;
+}
+
+.search {
+  background-color: #fafafa;
+  padding: 0.3rem;
+  height: fit-content;
+  text-align: center;
+  border: solid 0.1rem grey;
+  outline: none;
+  width: fit-content;
+  justify-self: self-end;
+}
+
+.last-side-icons {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.MuiSvgIcon-root {
+  color: rgb(0 0 0 / 80%);
+}
+
+.small-profile-picture {
+  border-radius: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 1rem;
+}
+
+@media screen and (max-width: 960px) {
+  .navbarItems {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .navbarItems {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    grid-template-columns: 1fr 1fr 2fr;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .navbarItems {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .disappear {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbarItems {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .disappear {
+    display: none;
+  }
+}

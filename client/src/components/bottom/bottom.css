@@ -1,0 +1,29 @@
+@media screen and (max-width: 590px) {
+  .bottom {
+    background-color: white;
+    padding: 0.6rem 1rem 0.6rem 1rem;
+    position: fixed;
+    width: -webkit-fill-available;
+    bottom: 0;
+    border-top: solid 0.1rem grey;
+  }
+
+  .bottom-icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .bottom-middle-icon {
+    justify-self: center;
+  }
+
+  .bottom-last-icon {
+    justify-self: self-end;
+  }
+}
+
+@media screen and (min-width: 590px) {
+  .mobile {
+    display: none;
+  }
+}
