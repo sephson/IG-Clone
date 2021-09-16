@@ -24,25 +24,27 @@ const Navbar = () => {
       <nav className="navbarItems">
         <img className="navbarLogo" alt="instagram-logo" src={iglogo} />
         <input className="search disappear" placeholder="Search" />
-        <div className="last-side-icons">
-          <HomeIcon className="disappear" />
-          <AddBoxOutlinedIcon className="disappear" />
-          <SendOutlinedIcon />
-          <ExploreOutlinedIcon className="disappear" />
-          <FavoriteBorderIcon className="disappear" />
-          <img
-            className="small-profile-picture disappear"
-            src={smallprofile}
-            alt="profilepic"
-            onClick={() => setProfileDrop(!profileDrop)}
-          />
-        </div>
-        <div
-          className={
-            profileDrop ? "view-profile-drop" : "non-view-profile-drop"
-          }
-        >
-          <ProfileDrop />
+        <div className="dropb0x-icons-divider">
+          <div className="last-side-icons">
+            <HomeIcon className="disappear" />
+            <AddBoxOutlinedIcon className="disappear" />
+            <SendOutlinedIcon />
+            <ExploreOutlinedIcon className="disappear" />
+            <FavoriteBorderIcon className="disappear" />
+            <img
+              className="small-profile-picture disappear"
+              src={smallprofile}
+              alt="profilepic"
+              onClick={() => setProfileDrop(!profileDrop)}
+            />
+          </div>
+          <div
+            className={
+              profileDrop ? "view-profile-drop" : "non-view-profile-drop"
+            }
+          >
+            <ProfileDrop />
+          </div>
         </div>
       </nav>
     </>
