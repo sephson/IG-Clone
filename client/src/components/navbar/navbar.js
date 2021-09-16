@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import iglogo from "../../images/instagram.png";
 import smallprofile from "../../images/picture1.jpg";
 import "./navbar.css";
@@ -10,9 +10,11 @@ import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
 import AddBoxOutlinedIcon from "@material-ui/icons/AddBoxOutlined";
 import SendOutlinedIcon from "@material-ui/icons/SendOutlined";
 import ExploreOutlinedIcon from "@material-ui/icons/ExploreOutlined";
+import ProfileDrop from "../../components/profiledrop/profiledrop";
 
 const Navbar = () => {
-  // const [click, setClick] = useState(false);
+  const [profileDrop, setProfileDrop] = useState(false);
+
   // const handleClick = () => {
   //   setClick(!click);
   // };
@@ -32,7 +34,15 @@ const Navbar = () => {
             className="small-profile-picture disappear"
             src={smallprofile}
             alt="profilepic"
+            onClick={() => setProfileDrop(!profileDrop)}
           />
+        </div>
+        <div
+          className={
+            profileDrop ? "view-profile-drop" : "non-view-profile-drop"
+          }
+        >
+          <ProfileDrop />
         </div>
       </nav>
     </>

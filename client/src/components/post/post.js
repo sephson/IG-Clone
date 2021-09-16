@@ -46,7 +46,7 @@ const post = () => {
           ></input>
         </div>
       </div>
-       <div className="post-wrap">
+      <div className="post-wrap">
         <div className="post-top">
           <div className="image-username">
             <img className="profile-image" src={profilepic} alt="profile pic" />

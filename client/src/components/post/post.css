@@ -1,11 +1,11 @@
 .post {
   margin-top: 4rem;
   padding-left: 12.8rem;
+  padding-right: 12.8rem;
 }
 
 .post-wrap {
   background-color: white;
-  width: 60%;
   border: solid 0.1rem #80808059;
   border-radius: 0.3rem;
   margin-bottom: 2rem;
@@ -96,13 +96,13 @@
 
 @media screen and (max-width: 960px) {
   .post {
-    padding: 0 0rem 0 5rem;
+    padding: 0 5rem 0 5rem;
   }
 }
 
 @media screen and (max-width: 800px) {
   .post {
-    padding: 0 0rem 0 2rem;
+    padding: 0 2rem 0 2rem;
   }
 }
 

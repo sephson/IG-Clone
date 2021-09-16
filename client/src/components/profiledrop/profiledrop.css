@@ -1,0 +1,27 @@
+.profile-drop {
+  background-color: white;
+  padding: 1rem;
+  width: 15rem;
+  height: 15rem;
+  position: absolute;
+  left: 36.5rem;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin: 2rem 0 1rem 2rem;
+}
+
+@media screen and (max-width: 800px) {
+  .profile-drop {
+    background-color: white;
+    padding: 1rem;
+    width: 15rem;
+    height: 15rem;
+    position: absolute;
+    left: 36.5rem;
+  }
+}
